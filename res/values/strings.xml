@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">I Can Read</string>
+    <string name="labelPickSample">Pick Sample</string>
+    <string name="labelMenuNetParams">Set Net Parameters</string>
+    <string name="labelCaptureImage">Capture Image</string>
+    <string name="labelRecognizeImage">Recognize</string>
+    <string name="labelEmptyChar">...</string>
+    <string name="labelCharacterField">Character:</string>
+    <string name="labelAddTrainingSet">Add to Training Set</string>
+    <string name="labelDoTraining">Train Network</string>
+
+</resources>

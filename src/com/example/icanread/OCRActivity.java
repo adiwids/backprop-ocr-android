@@ -58,7 +58,7 @@ public class OCRActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				TextView textCharacter = (TextView)findViewById(R.id.textCharacter);
-				//textCharacter.setText(ocr.recognize());
+				textCharacter.setText(ocr.recognize());
 			}
 		});
 	}

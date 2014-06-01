@@ -47,7 +47,7 @@ public class SettingsActivity extends ListActivity implements OnItemClickListene
 				public void onClick(DialogInterface dialog, int which) {
 					// TODO Auto-generated method stub
 					double val = Double.parseDouble((fieldValue.getText()).toString());
-					//ocr.setNetParameter(arg2, val);
+					ocr.setNetParameter(arg2, val);
 				}
 			})
 			.setNegativeButton("Close", new DialogInterface.OnClickListener() {
@@ -64,13 +64,13 @@ public class SettingsActivity extends ListActivity implements OnItemClickListene
 			@Override
 			public void onShow(DialogInterface dialog) {
 				// TODO Auto-generated method stub
-				//fillToField(fieldValue, arg2);
+				fillToField(fieldValue, arg2);
 			}
 		});
 		prompt.show();
 	}
 	
-	/**private void fillToField(EditText field, int idxParam) {
+	private void fillToField(EditText field, int idxParam) {
 		
 		switch(idxParam) {
 		case 0:
@@ -88,5 +88,5 @@ public class SettingsActivity extends ListActivity implements OnItemClickListene
 		default:
 			break;
 		}
-	}*/
+	}
 }

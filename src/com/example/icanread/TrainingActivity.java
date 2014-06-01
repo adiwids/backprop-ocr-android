@@ -95,7 +95,7 @@ public class TrainingActivity extends Activity {
 
 					@Override
 					protected Void doInBackground(Void... params) {
-						//ocr.addTrainingSet(label);
+						ocr.addTrainingSet(label);
 						for (int i = 0; i <= 10; i += 5) {
 							try {
 								Thread.sleep(1000);
@@ -137,7 +137,7 @@ public class TrainingActivity extends Activity {
 
 					@Override
 					protected Void doInBackground(Void... params) {
-						//ocr.trainNetwork();
+						ocr.trainNetwork();
 						for (int i = 0; i <= 10; i += 5) {
 							try {
 								Thread.sleep(1000);
@@ -216,7 +216,7 @@ public class TrainingActivity extends Activity {
 		Bitmap image = ((BitmapDrawable)view.getDrawable()).getBitmap();
 		btnAddData.setEnabled(!(image == null));
 		
-		//btnAddData.setEnabled((ocr.DATASET_COUNTER < ocr.parameters.nTrainingData));
-		//btnTrain.setEnabled((ocr.DATASET_COUNTER >= ocr.parameters.nTrainingData));
+		btnAddData.setEnabled((ocr.DATASET_COUNTER < ocr.parameters.nTrainingData));
+		btnTrain.setEnabled((ocr.DATASET_COUNTER >= ocr.parameters.nTrainingData));
 	} 
 }
